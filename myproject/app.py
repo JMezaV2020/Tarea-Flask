@@ -11,6 +11,10 @@ def index():
 def about():
     return render_template('about.html')
 
+@app.route('/datos')
+def datos():
+    return render_template('datos.html')
+
 @app.route('/contact')
 def contact():
     return render_template('contact.html')

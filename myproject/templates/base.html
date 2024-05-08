@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Explorando Tipos de Tarifas Energéticas</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <header>
-        <h1>My Website</h1>
+        <h1>Explorando Tipos de Tarifas Energéticas</h1>
         <nav>
             <ul>
                 <li><a href="{{ url_for('index') }}">Inicio</a></li>
                 <li><a href="{{ url_for('about') }}">Acerca de</a></li>
                 <li><a href="{{ url_for('contact') }}">Contacto</a></li>
+                <li><a href="{{ url_for('datos') }}">Datos</a></li>
             </ul>
         </nav>
     </header>
@@ -21,7 +22,7 @@
         {% block content %}{% endblock %}
     </main>
     <footer>
-        <p>&copy; 2024 My Website</p>
+        <p>&copy; 2024 Explorando Tipos de Tarifas Energéticas</p>
     </footer>
 </body>
 </html>
